@@ -1,4 +1,3 @@
 let tg = window.Telegram.WebApp;
 
-console.log("+");
-console.log(tg.initData);
+WebApp.showAlert(`Добро пожаловать, @${WebApp.WebAppUser.username}.`);

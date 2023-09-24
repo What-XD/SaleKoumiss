@@ -73,9 +73,16 @@
    });
 
 
+   // let usercard = document.getElementById("usercard");
+   // let profName = document.createElement('p');
+   // profName.innerText = `Привет ${tg.initDataUnsafe.user.last_name}!<br>Тут ты можешь приобрести Кумыс`;
+   // usercard.appendChild(profName);
+
    let usercard = document.getElementById("usercard");
    let profName = document.createElement('p');
-   profName.innerText = `Привет ${tg.initDataUnsafe.user.last_name}!<br>Тут ты можешь приобрести Кумыс`;
+   profName.innerText = `${tg.initDataUnsafe.user.first_name}
+   ${tg.initDataUnsafe.user.last_name}
+   ${tg.initDataUnsafe.user.username} (${tg.initDataUnsafe.user.language_code})`;
    usercard.appendChild(profName);
 </script>
 
